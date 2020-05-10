@@ -17,13 +17,12 @@ class ItemService {
     @Transactional
     fun createItem(): Item {
         val item = Item()
-        itemRepository.persist(item)
-        println(item.name)
+        item.persist()
         return item
     }
 
     fun getItems(): List<Item> {
-        return itemRepository.all() ?: emptyList()
+        return itemRepository.all()
     }
 
 }
