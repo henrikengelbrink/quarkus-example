@@ -3,9 +3,7 @@ package integration
 import io.quarkus.test.junit.QuarkusTest
 import io.restassured.RestAssured.given
 import org.junit.jupiter.api.Test
-import org.testcontainers.junit.jupiter.Testcontainers
 
-@Testcontainers
 @QuarkusTest
 internal class ItemsIntegrationTest {
 
